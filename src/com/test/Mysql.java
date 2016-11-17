@@ -223,8 +223,8 @@ public class Mysql {
 							// System.out.println("Executing stmt");
 							Statement st6 = conn.createStatement();
 
-							String in6 = "INSERT INTO component_history(componentid, from_date, status, maint_stn, dept,status_reason,discrepency_no,position_component_removal,tail_no) VALUES('"
-									+ comp_id + "','" + HR_DTE + "','Removed','" + HR_STA + "','" + HR_DEPT + "','"
+							String in6 = "INSERT INTO component_history(componentid, from_date, status,to_date, maint_stn, dept,status_reason,discrepency_no,position_component_removal,tail_no) VALUES('"
+									+ comp_id + "','" + HR_DTE + "','Removed','" + HR_DTE + "','" + HR_STA + "','" + HR_DEPT + "','"
 									+ HR_REASON + "','" + HR_D_NBR + "','" + H_POS + "','" + H_ACN + "')";
 							
 							in6 = in6.replaceAll("\"null\"", "null");

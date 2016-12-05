@@ -16,6 +16,7 @@ public class Mysql {
 	// Database credentials
 	static final String USER = "root";
 	static final String PASS = "root";
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -163,7 +164,7 @@ public class Mysql {
 							in4 = in4.replaceAll("\"Null\"", "null");
 							in4 = in4.replaceAll("\"NULL\"", "null");
 
-							st4.executeUpdate(in4);
+							//st4.executeUpdate(in4);
 
 							Statement st4_s = conn.createStatement();
 
